@@ -24,5 +24,47 @@ namespace MyStore
         {
             InitializeComponent();
         }
+
+        private void Button_Reg_Click(object sender, RoutedEventArgs e)
+        {
+            string login = textBoxLogin.Text.Trim();
+            string password = passBox.Password.Trim();
+            string password2 = passBox2.Password.Trim();
+            string email = textBoxEmail.Text.Trim().ToLower();
+
+            if (login.Length < 5)
+            {
+                textBoxLogin.ToolTip = "Это поле введено некорректно!";
+                textBoxLogin.Background = Brushes.Red;
+            }
+            else if(password.Length < 5)
+            {
+                passBox.ToolTip = "Это поле введено некорректно!";
+                passBox.Background = Brushes.Red;
+            }
+            else if (password != password2)
+            {
+                passBox2.ToolTip = "Это поле введено некорректно!";
+                passBox2.Background = Brushes.Red;
+            }
+            else if (email.Length < 5 | !email.Contains("@") | !email.Contains("."))
+            {
+                textBoxEmail.ToolTip = "Это поле введено некорректно!";
+                textBoxEmail.Background = Brushes.Red;
+            }
+            else
+            {
+                textBoxLogin.ToolTip = "";
+                textBoxLogin.Background = Brushes.Transparent;
+                passBox.ToolTip = "";
+                passBox.Background = Brushes.Transparent;
+                passBox2.ToolTip = "";
+                passBox2.Background = Brushes.Transparent;
+                textBoxEmail.ToolTip = "";
+                textBoxEmail.Background = Brushes.Transparent;
+
+                MessageBox.Show("Все в порядке");
+            }
+        }
     }
 }
