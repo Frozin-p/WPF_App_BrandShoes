@@ -20,9 +20,15 @@ namespace MyStore
     /// </summary>
     public partial class MainWindow : Window
     {
+
+        ApplicationContext db;
+
         public MainWindow()
         {
             InitializeComponent();
+
+            db = new ApplicationContext();
+
         }
 
         private void Button_Reg_Click(object sender, RoutedEventArgs e)
@@ -64,6 +70,11 @@ namespace MyStore
                 textBoxEmail.Background = Brushes.Transparent;
 
                 MessageBox.Show("Все в порядке");
+
+                User user = new User(login, password, email);
+
+                db.Users.Add(user);
+                db.SaveChanges();
             }
         }
     }

@@ -24,3 +24,14 @@ C:\Users\Frozin\Desktop\Study\Univer\OOP\Git\WPF_App_BrandShoes\MyStore\obj\Debu
 C:\Users\Frozin\Desktop\Study\Univer\OOP\Git\WPF_App_BrandShoes\MyStore\obj\Debug\MyStore.csproj.CopyComplete
 C:\Users\Frozin\Desktop\Study\Univer\OOP\Git\WPF_App_BrandShoes\MyStore\obj\Debug\MyStore.exe
 C:\Users\Frozin\Desktop\Study\Univer\OOP\Git\WPF_App_BrandShoes\MyStore\obj\Debug\MyStore.pdb
+C:\Users\Frozin\Desktop\Study\Univer\OOP\Git\WPF_App_BrandShoes\MyStore\bin\Debug\kursovaya.db
+C:\Users\Frozin\Desktop\Study\Univer\OOP\Git\WPF_App_BrandShoes\MyStore\bin\Debug\EntityFramework.dll
+C:\Users\Frozin\Desktop\Study\Univer\OOP\Git\WPF_App_BrandShoes\MyStore\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Frozin\Desktop\Study\Univer\OOP\Git\WPF_App_BrandShoes\MyStore\bin\Debug\System.Data.SQLite.dll
+C:\Users\Frozin\Desktop\Study\Univer\OOP\Git\WPF_App_BrandShoes\MyStore\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\Frozin\Desktop\Study\Univer\OOP\Git\WPF_App_BrandShoes\MyStore\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\Frozin\Desktop\Study\Univer\OOP\Git\WPF_App_BrandShoes\MyStore\bin\Debug\EntityFramework.xml
+C:\Users\Frozin\Desktop\Study\Univer\OOP\Git\WPF_App_BrandShoes\MyStore\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Frozin\Desktop\Study\Univer\OOP\Git\WPF_App_BrandShoes\MyStore\bin\Debug\System.Data.SQLite.xml
+C:\Users\Frozin\Desktop\Study\Univer\OOP\Git\WPF_App_BrandShoes\MyStore\obj\Debug\AuthWindow.g.cs
+C:\Users\Frozin\Desktop\Study\Univer\OOP\Git\WPF_App_BrandShoes\MyStore\obj\Debug\AuthWindow.baml
