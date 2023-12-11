@@ -60,5 +60,12 @@ namespace MyStore
                     MessageBox.Show("Вы ввели что-то некорректно");
             }
         }
+
+        private void Button_Window_Reg_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow mainWindow = new MainWindow();
+            mainWindow.Show();
+            Hide();
+        }
     }
 }

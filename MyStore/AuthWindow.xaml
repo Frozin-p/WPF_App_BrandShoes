@@ -16,7 +16,7 @@
                 <TextBlock Text="Авторизация" FontSize="40" FontWeight="Bold" Margin="0 0 0 50" />
 
                 <Grid Margin="0 0 0 20">
-                    <Button HorizontalAlignment="Left" Content="Регистрация" Width="200" Height="50" Background="MediumPurple" FontSize="18" />
+                    <Button HorizontalAlignment="Left" Content="Регистрация" Click="Button_Window_Reg_Click" Width="200" Height="50" Background="MediumPurple" FontSize="18" />
                     <Button HorizontalAlignment="Right" Content="Войти" Width="200" Height="50" Style="{StaticResource MaterialDesignFlatButton}" Background="White" FontSize="18" />
                 </Grid>
 

@@ -77,5 +77,12 @@ namespace MyStore
                 db.SaveChanges();
             }
         }
+
+        private void Button_Window_Auth_Click(object sender, EventArgs e)
+        {
+            AuthWindow authWindow = new AuthWindow();
+            authWindow.Show();
+            Hide();
+        }
     }
 }
