@@ -75,6 +75,10 @@ namespace MyStore
 
                 db.Users.Add(user);
                 db.SaveChanges();
+
+                AuthWindow authWindow = new AuthWindow();
+                authWindow.Show();
+                Hide();
             }
         }
 

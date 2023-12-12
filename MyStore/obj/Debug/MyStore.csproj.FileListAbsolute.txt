@@ -35,3 +35,5 @@ C:\Users\Frozin\Desktop\Study\Univer\OOP\Git\WPF_App_BrandShoes\MyStore\bin\Debu
 C:\Users\Frozin\Desktop\Study\Univer\OOP\Git\WPF_App_BrandShoes\MyStore\bin\Debug\System.Data.SQLite.xml
 C:\Users\Frozin\Desktop\Study\Univer\OOP\Git\WPF_App_BrandShoes\MyStore\obj\Debug\AuthWindow.g.cs
 C:\Users\Frozin\Desktop\Study\Univer\OOP\Git\WPF_App_BrandShoes\MyStore\obj\Debug\AuthWindow.baml
+C:\Users\Frozin\Desktop\Study\Univer\OOP\Git\WPF_App_BrandShoes\MyStore\obj\Debug\UserPageWindow.g.cs
+C:\Users\Frozin\Desktop\Study\Univer\OOP\Git\WPF_App_BrandShoes\MyStore\obj\Debug\UserPageWindow.baml

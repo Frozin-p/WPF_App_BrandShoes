@@ -55,6 +55,9 @@ namespace MyStore
                 if(authUser != null)
                 {
                     MessageBox.Show("Все в порядке");
+                    UserPageWindow userPageWindow = new UserPageWindow();
+                    userPageWindow.Show();
+                    Hide();
                 }
                 else
                     MessageBox.Show("Вы ввели что-то некорректно");
