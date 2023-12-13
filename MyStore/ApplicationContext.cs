@@ -10,6 +10,7 @@ namespace MyStore
     internal class ApplicationContext : DbContext
     {
         public DbSet<User> Users { get; set; }
+        public DbSet<Shoe> Shoes { get; set; }
 
         public ApplicationContext() : base("DefaultConnection") { }
 

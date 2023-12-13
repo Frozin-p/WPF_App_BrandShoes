@@ -25,13 +25,11 @@
             <ColumnDefinition></ColumnDefinition>
         </Grid.ColumnDefinitions>
 
-        
-
-
+        <Border Grid.Row="7" Grid.ColumnSpan="4" Background="White"/>
 
         <Button x:Name="Account"
             Width="150" Height="150" Grid.Column="3" Grid.Row="7" HorizontalAlignment="Center" VerticalAlignment="Center" 
-            Background="{x:Null}" BorderBrush="{x:Null}" Foreground="{x:Null}" >
+            Click="UserPage_Button" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="{x:Null}" >
             <Image Width="120" Height="120" Source="/PNG/Account-User-PNG-Clipart.png" Grid.Column="3" Grid.Row="7" HorizontalAlignment="Center" VerticalAlignment="Center" />
         </Button>
         <Button x:Name="Cart" 
@@ -48,6 +46,24 @@
             Width="150" Height="150" Grid.Column="0" Grid.Row="7" HorizontalAlignment="Center" VerticalAlignment="Center" 
             Click="Home_Page_Button" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="{x:Null}" >
             <Image Width="120" Height="120" Source="/PNG/Home.png"  Grid.Row="7" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" />
+        </Button>
+
+        <Grid Grid.ColumnSpan="4">            
+            <Image Source="/PNG/Avatar.jpg" VerticalAlignment ="Center" HorizontalAlignment="Left"/>
+            <StackPanel>
+                <TextBlock Text="User" FontWeight="Bold" FontSize="65" Height="100" Width="500" HorizontalAlignment="Left" Margin="200 0 0 0"/>
+            </StackPanel>
+            <StackPanel>
+                <TextBlock Text="Back-End Developer" FontWeight="SemiBold" FontSize="40" Height="50" Width="500" HorizontalAlignment="Left" Margin="200 80 0 0"/>
+            </StackPanel>
+        </Grid>
+
+        <Button Content="Избранное" FontSize="50" Grid.Row="2" Grid.ColumnSpan="2" Height="100"
+                Style="{StaticResource MaterialDesignFlatButton}" Click="Favourites_Button">
+        </Button>
+
+        <Button Content="Корзина" FontSize="50" Grid.Row="2" Grid.Column="2" Grid.ColumnSpan="2" Height="100"
+                Style="{StaticResource MaterialDesignFlatButton}" Click="Cart_Button">
         </Button>
     </Grid>
 </Window>

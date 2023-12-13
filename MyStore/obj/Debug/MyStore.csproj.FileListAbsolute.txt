@@ -37,3 +37,9 @@ C:\Users\Frozin\Desktop\Study\Univer\OOP\Git\WPF_App_BrandShoes\MyStore\obj\Debu
 C:\Users\Frozin\Desktop\Study\Univer\OOP\Git\WPF_App_BrandShoes\MyStore\obj\Debug\AuthWindow.baml
 C:\Users\Frozin\Desktop\Study\Univer\OOP\Git\WPF_App_BrandShoes\MyStore\obj\Debug\UserPageWindow.g.cs
 C:\Users\Frozin\Desktop\Study\Univer\OOP\Git\WPF_App_BrandShoes\MyStore\obj\Debug\UserPageWindow.baml
+C:\Users\Frozin\Desktop\Study\Univer\OOP\Git\WPF_App_BrandShoes\MyStore\obj\Debug\CartPageWindow.g.cs
+C:\Users\Frozin\Desktop\Study\Univer\OOP\Git\WPF_App_BrandShoes\MyStore\obj\Debug\FavouritesPageWindow.g.cs
+C:\Users\Frozin\Desktop\Study\Univer\OOP\Git\WPF_App_BrandShoes\MyStore\obj\Debug\HomePageWindow.g.cs
+C:\Users\Frozin\Desktop\Study\Univer\OOP\Git\WPF_App_BrandShoes\MyStore\obj\Debug\CartPageWindow.baml
+C:\Users\Frozin\Desktop\Study\Univer\OOP\Git\WPF_App_BrandShoes\MyStore\obj\Debug\FavouritesPageWindow.baml
+C:\Users\Frozin\Desktop\Study\Univer\OOP\Git\WPF_App_BrandShoes\MyStore\obj\Debug\HomePageWindow.baml

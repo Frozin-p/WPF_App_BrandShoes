@@ -22,28 +22,35 @@ namespace MyStore
         public UserPageWindow()
         {
             InitializeComponent();
+
         }
 
-        private void Back_To_Main_Window(object sender, RoutedEventArgs e)
+        private void UserPage_Button(object sender, RoutedEventArgs e)
         {
-            MainWindow mainWindow = new MainWindow();
-            mainWindow.Show();
+            UserPageWindow userPageWindow = new UserPageWindow();
+            userPageWindow.Show();
             Hide();
         }
 
         private void Cart_Button(object sender, RoutedEventArgs e)
         {
-
+            CartPageWindow cartPageWindow = new CartPageWindow();
+            cartPageWindow.Show();
+            Hide();
         }
 
         private void Favourites_Button(object sender, RoutedEventArgs e)
         {
-
+            FavouritesPageWindow favouritesPageWindow = new FavouritesPageWindow();
+            favouritesPageWindow.Show();
+            Hide();
         }
 
         private void Home_Page_Button(object sender, RoutedEventArgs e)
         {
-
+            HomePageWindow homePageWindow = new HomePageWindow();
+            homePageWindow.Show();
+            Hide();
         }
     }
 }
