@@ -96,6 +96,7 @@
     <Compile Include="HomePageWindow.xaml.cs">
       <DependentUpon>HomePageWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Obuv.cs" />
     <Compile Include="Shoe.cs" />
     <Compile Include="User.cs" />
     <Compile Include="UserPageWindow.xaml.cs">
