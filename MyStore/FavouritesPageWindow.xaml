@@ -26,6 +26,9 @@
         </Grid.ColumnDefinitions>
 
         <Border Grid.Row="7" Grid.ColumnSpan="4" Background="White"/>
+        
+        <TextBlock Grid.ColumnSpan="4" Text="Избранное" FontSize="80" FontWeight="Bold" 
+                   HorizontalAlignment="Center" VerticalAlignment="Center" />
 
         <Button x:Name="Account"
             Width="150" Height="150" Grid.Column="3" Grid.Row="7" HorizontalAlignment="Center" VerticalAlignment="Center" 
@@ -47,5 +50,12 @@
             Click="Home_Page_Button" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="{x:Null}" >
             <Image Width="120" Height="120" Source="/PNG/Home.png"  Grid.Row="7" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" />
         </Button>
+
+        <ScrollViewer Grid.Row="1" Grid.RowSpan="6" Grid.ColumnSpan="4" Background="LightGray" Visibility="Visible">
+            <StackPanel x:Name="CartPanel" Visibility="Visible" Background="LightPink">
+                
+            </StackPanel>
+        </ScrollViewer>
+
     </Grid>
 </Window>

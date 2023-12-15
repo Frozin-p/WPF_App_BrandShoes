@@ -57,13 +57,14 @@ xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 
         <ScrollViewer Grid.Row="1" Grid.RowSpan="6" Grid.ColumnSpan="4" Background="LightGray" Visibility="Visible">
             <StackPanel Visibility="Visible">
-                <Grid x:Name="VansGrid" Height="250" Background="White" Margin="0 10">
+                <Grid x:Name="VansGrid" MinHeight="250" MaxHeight="250" Background="White" Margin="0 10">
                     <Grid.Effect>
                         <DropShadowEffect BlurRadius="10" Color="Gray" ShadowDepth="0"/>
                     </Grid.Effect>
                     <Image Source="/PNG/Vans.jpeg" HorizontalAlignment="Left"/>
-                    <Button Width="115" Height="115" HorizontalAlignment="Right" VerticalAlignment="Bottom" 
-                                 Background="Transparent" BorderBrush="Transparent" Foreground="Transparent">
+                    <Button x:Name="VansButton" Click="AddToCartVans" 
+                              Width="115" Height="115" HorizontalAlignment="Right" VerticalAlignment="Bottom" 
+                              Background="Transparent" BorderBrush="Transparent" Foreground="Transparent">
                         <Image Source="/PNG/cart.png" Width="80" Height="80" 
                                HorizontalAlignment="Center" VerticalAlignment="Center"/>
                     </Button>
@@ -73,15 +74,21 @@ xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                                HorizontalAlignment="Center" VerticalAlignment="Center"/>
                     </Button>
                     <TextBlock x:Name="textBox_1" Height="140" VerticalAlignment="Top" TextWrapping="Wrap" Margin="300 0 0 0" FontSize="50" FontWeight="SemiBold"/>
+
+                    <Button VerticalAlignment="Bottom" Margin="0 0 0 20" Height="80" Width="250" 
+                            Style="{StaticResource MaterialDesignFlatButton}" Content="Перейти к товару" 
+                            Click="GoToVansPage" FontSize="25" FontWeight="Bold" />
+
+
                 </Grid>
 
-                <Grid x:Name="DunkGrid" Height="250" Background="White" Margin="0 10">
+                <Grid x:Name="DunkGrid" MinHeight="250" MaxHeight="250" Background="White" Margin="0 10">
                     <Grid.Effect>
                         <DropShadowEffect BlurRadius="10" Color="Gray" ShadowDepth="0"/>
                     </Grid.Effect>
 
                     <Image Source="/PNG/SBDunk.jpeg" HorizontalAlignment="Left"/>
-                    <Button Width="115" Height="115" HorizontalAlignment="Right" VerticalAlignment="Bottom" 
+                    <Button x:Name="DunkButton" Click="AddToCartDunk" Width="115" Height="115" HorizontalAlignment="Right" VerticalAlignment="Bottom" 
                                  Background="Transparent" BorderBrush="Transparent" Foreground="Transparent">
                         <Image Source="/PNG/cart.png" Width="80" Height="80" 
                                HorizontalAlignment="Center" VerticalAlignment="Center"/>
@@ -92,15 +99,21 @@ xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                                HorizontalAlignment="Center" VerticalAlignment="Center"/>
                     </Button>
                     <TextBlock x:Name="textBox_2" Height="140" VerticalAlignment="Top" Margin="300 0 0 0" FontSize="50" FontWeight="SemiBold"/>
+
+                    <Button VerticalAlignment="Bottom" Margin="0 0 0 20" Height="80" Width="250" 
+                            Style="{StaticResource MaterialDesignFlatButton}" Content="Перейти к товару" 
+                            Click="GoToDunkPage" FontSize="25" FontWeight="Bold" />
+
+
                 </Grid>
 
-                <Grid x:Name="SambaGrid" Height="250" Background="White" Margin="0 10">
+                <Grid x:Name="SambaGrid" MinHeight="250" MaxHeight="250" Background="White" Margin="0 10">
                     <Grid.Effect>
                         <DropShadowEffect BlurRadius="10" Color="Gray" ShadowDepth="0"/>
                     </Grid.Effect>
                     <Grid>
                         <Image Source="/PNG/Samba.jpg" HorizontalAlignment="Left"/>
-                        <Button  Width="115" Height="115" HorizontalAlignment="Right" VerticalAlignment="Bottom" 
+                        <Button x:Name="SambaButton" Click="AddToCartSamba" Width="115" Height="115" HorizontalAlignment="Right" VerticalAlignment="Bottom" 
                                  Background="Transparent" BorderBrush="Transparent" Foreground="Transparent">
                             <Image Source="/PNG/cart.png" Width="80" Height="80" 
                                HorizontalAlignment="Center" VerticalAlignment="Center"/>
@@ -111,16 +124,22 @@ xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                                HorizontalAlignment="Center" VerticalAlignment="Center"/>
                         </Button>
                         <TextBlock x:Name="textBox_3" Height="140" VerticalAlignment="Top" Margin="300 0 0 0" FontSize="50" FontWeight="SemiBold"/>
+
+                        <Button VerticalAlignment="Bottom" Margin="0 0 0 20" Height="80" Width="250" 
+                            Style="{StaticResource MaterialDesignFlatButton}" Content="Перейти к товару" 
+                            Click="GoToSambaPage" FontSize="25" FontWeight="Bold" />
+
+
                     </Grid>
                 </Grid>
 
-                <Grid x:Name="RSZGrid" Height="250" Background="White" Margin="0 10">
+                <Grid x:Name="RSZGrid" MinHeight="250" MaxHeight="250" Background="White" Margin="0 10">
                     <Grid.Effect>
                         <DropShadowEffect BlurRadius="10" Color="Gray" ShadowDepth="0"/>
                     </Grid.Effect>
                     <Grid>
                         <Image Source="/PNG/RSZ.jpg" HorizontalAlignment="Left"/>
-                        <Button  Width="115" Height="115" HorizontalAlignment="Right" VerticalAlignment="Bottom" 
+                        <Button x:Name="RSZButton"  Click="AddToCartRSZ" Width="115" Height="115" HorizontalAlignment="Right" VerticalAlignment="Bottom" 
                                  Background="Transparent" BorderBrush="Transparent" Foreground="Transparent">
                             <Image Source="/PNG/cart.png" Width="80" Height="80" 
                                HorizontalAlignment="Center" VerticalAlignment="Center"/>
@@ -131,16 +150,22 @@ xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                                HorizontalAlignment="Center" VerticalAlignment="Center"/>
                         </Button>
                         <TextBlock x:Name="textBox_4" Height="140" VerticalAlignment="Top" Margin="300 0 0 0" FontSize="50" FontWeight="SemiBold"/>
+
+                        <Button VerticalAlignment="Bottom" Margin="0 0 0 20" Height="80" Width="250" 
+                            Style="{StaticResource MaterialDesignFlatButton}" Content="Перейти к товару" 
+                            Click="GoToRSZPage" FontSize="25" FontWeight="Bold" />
+
+
                     </Grid>
                 </Grid>
 
-                <Grid x:Name="OcaiGrid" Height="250" Background="White" Margin="0 10">
+                <Grid x:Name="OcaiGrid" MinHeight="250" MaxHeight="250" Background="White" Margin="0 10">
                     <Grid.Effect>
                         <DropShadowEffect BlurRadius="10" Color="Gray" ShadowDepth="0"/>
                     </Grid.Effect>
                     <Grid>
                         <Image Source="/PNG/ocai.jpg" HorizontalAlignment="Left"/>
-                        <Button  Width="115" Height="115" HorizontalAlignment="Right" VerticalAlignment="Bottom" 
+                        <Button x:Name="OcaiButton"  Click="AddToCartOcai" Width="115" Height="115" HorizontalAlignment="Right" VerticalAlignment="Bottom" 
                                  Background="Transparent" BorderBrush="Transparent" Foreground="Transparent">
                             <Image Source="/PNG/cart.png" Width="80" Height="80" 
                                HorizontalAlignment="Center" VerticalAlignment="Center"/>
@@ -151,6 +176,12 @@ xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                                HorizontalAlignment="Center" VerticalAlignment="Center"/>
                         </Button>
                         <TextBlock x:Name="textBox_5" Height="140" VerticalAlignment="Top" Margin="300 0 0 0" FontSize="50" FontWeight="SemiBold"/>
+
+                        <Button VerticalAlignment="Bottom" Margin="0 0 0 20" Height="80" Width="250" 
+                            Style="{StaticResource MaterialDesignFlatButton}" Content="Перейти к товару" 
+                            Click="GoToOcaiPage" FontSize="25" FontWeight="Bold" />
+
+
                     </Grid>
                 </Grid>
             </StackPanel>

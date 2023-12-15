@@ -27,6 +27,10 @@
 
         <Border Grid.Row="7" Grid.ColumnSpan="4" Background="White"/>
 
+        <StackPanel Grid.Row="1" Grid.ColumnSpan="4" Grid.RowSpan="6" Background="Azure">
+            
+        </StackPanel>
+
         <Button x:Name="Account"
             Width="150" Height="150" Grid.Column="3" Grid.Row="7" HorizontalAlignment="Center" VerticalAlignment="Center" 
             Click="UserPage_Button" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="{x:Null}" >
@@ -65,5 +69,6 @@
         <Button Content="Корзина" FontSize="50" Grid.Row="2" Grid.Column="2" Grid.ColumnSpan="2" Height="100"
                 Style="{StaticResource MaterialDesignFlatButton}" Click="Cart_Button">
         </Button>
+        
     </Grid>
 </Window>

@@ -1,0 +1,63 @@
+﻿<Window x:Class="MyStore.Карточки_товаров.OcaiPageWindow"
+         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MyStore"
+        mc:Ignorable="d"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        Title="Ocai Retro" Height="1920 " Width="1080" WindowStyle="ThreeDBorderWindow">
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <Grid Grid.ColumnSpan="4">
+
+            <TextBlock VerticalAlignment="Bottom" HorizontalAlignment="Center"
+                       FontSize="50" TextAlignment="Center" FontWeight="Bold" 
+                       Text="Карточка товара"
+                       MinWidth="500" MaxWidth="500"/>
+
+            <Button VerticalAlignment="Top" HorizontalAlignment="Left" 
+                    Margin="0 0 0 0" Height="50" Width="100"
+                    Style="{StaticResource MaterialDesignFlatButton}" 
+                    Content="Назад" 
+                    Click="BackToHome" FontSize="20" FontWeight="Bold" 
+                    MinWidth="50" MaxWidth="100"/>
+        </Grid>
+        <ScrollViewer Grid.ColumnSpan="4" Grid.Row="1" Grid.RowSpan="7">
+            <StackPanel>
+                <Grid x:Name="RSZGrid" Background="White" Margin="0 10"
+              >
+                    <Image Height="300" Source="/PNG/ocai.jpg" 
+                   HorizontalAlignment="Left" VerticalAlignment="Top" Grid.RowSpan="2"/>
+
+                    <TextBlock x:Name="InfoAboutShoe" Height="140" VerticalAlignment="Top" 
+                       TextWrapping="Wrap" Margin="400 20 0 0" FontSize="50" 
+                       FontWeight="SemiBold"/>
+                    <TextBlock x:Name="Description" MinHeight="1000" MaxHeight="1000" VerticalAlignment="Bottom"
+                   FontSize="40" TextWrapping="Wrap" TextAlignment="Justify" FontStretch="Condensed"
+                   FontWeight="SemiBold" Margin="20 350 20 20"
+                   Text="Одной из ключевых составляющих успеха Ocai Retro Sneakers является их предыстория. Эта модель появилась на рынке в 1990-х годах и сразу завоевала популярность. Хотя они популяризировались во время этого времени, они были впервые выпущены еще в 1960-х годах. Ocai Retro Sneakers были популярными среди молодежи, стремившейся выделиться своим неповторимым стилем и выразить свою индивидуальность."
+                           />
+                </Grid>
+            </StackPanel>
+        </ScrollViewer>
+
+    </Grid>
+</Window>

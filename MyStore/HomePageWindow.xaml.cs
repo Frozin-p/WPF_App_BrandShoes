@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MyStore.Карточки_товаров;
+using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
@@ -24,6 +25,7 @@ namespace MyStore
     {
 
         ApplicationContext datb;
+
         public HomePageWindow()
         {
             InitializeComponent();
@@ -164,9 +166,89 @@ namespace MyStore
             }
         }
 
-        private void AddToCart(object sender, RoutedEventArgs e)
+        private void AddToCartVans(object sender, RoutedEventArgs e)
         {
+            CartPageWindow cartPageWindow = new CartPageWindow();
+            cartPageWindow.VansGrid.Visibility = Visibility.Visible;
 
+            cartPageWindow.Show();
+            Hide();
+            MessageBox.Show("Товар добавлен в корзину");
+        }
+
+        private void AddToCartDunk(object sender, RoutedEventArgs e)
+        {
+            CartPageWindow cartPageWindow = new CartPageWindow();
+            cartPageWindow.DunkGrid.Visibility = Visibility.Visible;
+
+            cartPageWindow.Show();
+            Hide();
+            MessageBox.Show("Товар добавлен в корзину");
+        }
+
+        private void AddToCartSamba(object sender, RoutedEventArgs e)
+        {
+            CartPageWindow cartPageWindow = new CartPageWindow();
+            cartPageWindow.SambaGrid.Visibility = Visibility.Visible;
+
+            cartPageWindow.Show();
+            Hide();
+            MessageBox.Show("Товар добавлен в корзину");
+        }
+
+        private void AddToCartRSZ(object sender, RoutedEventArgs e)
+        {
+            CartPageWindow cartPageWindow = new CartPageWindow();
+            cartPageWindow.RSZGrid.Visibility = Visibility.Visible;
+
+            cartPageWindow.Show();
+            Hide();
+            MessageBox.Show("Товар добавлен в корзину");
+        }
+
+        private void AddToCartOcai(object sender, RoutedEventArgs e)
+        {
+            CartPageWindow cartPageWindow = new CartPageWindow();
+            cartPageWindow.OcaiGrid.Visibility = Visibility.Visible;
+
+            cartPageWindow.Show();
+            Hide();
+            MessageBox.Show("Товар добавлен в корзину");
+        }
+
+        private void GoToVansPage(object sender, RoutedEventArgs e)
+        {
+            VansPageWindow vansPageWindow = new VansPageWindow();
+            vansPageWindow.Show();
+            Hide();
+        }
+
+        private void GoToDunkPage(object sender, RoutedEventArgs e)
+        {
+            DunkPageWindow dunkPageWindow = new DunkPageWindow();
+            dunkPageWindow.Show();
+            Hide();
+        }
+
+        private void GoToSambaPage(object sender, RoutedEventArgs e)
+        {
+            SambaPageWindow sambaPageWindow = new SambaPageWindow();
+            sambaPageWindow.Show();
+            Hide();
+        }
+
+        private void GoToRSZPage(object sender, RoutedEventArgs e)
+        {
+            RSZPageWindow rSZPageWindow = new RSZPageWindow();
+            rSZPageWindow.Show();
+            Hide();
+        }
+
+        private void GoToOcaiPage(object sender, RoutedEventArgs e)
+        {
+            OcaiPageWindow ocaiPageWindow = new OcaiPageWindow();
+            ocaiPageWindow.Show();
+            Hide();
         }
     }
 }

@@ -43,3 +43,13 @@ C:\Users\Frozin\Desktop\Study\Univer\OOP\Git\WPF_App_BrandShoes\MyStore\obj\Rele
 C:\Users\Frozin\Desktop\Study\Univer\OOP\Git\WPF_App_BrandShoes\MyStore\obj\Release\MyStore.csproj.CopyComplete
 C:\Users\Frozin\Desktop\Study\Univer\OOP\Git\WPF_App_BrandShoes\MyStore\obj\Release\MyStore.exe
 C:\Users\Frozin\Desktop\Study\Univer\OOP\Git\WPF_App_BrandShoes\MyStore\obj\Release\MyStore.pdb
+C:\Users\Frozin\Desktop\Study\Univer\OOP\Git\WPF_App_BrandShoes\MyStore\obj\Release\Карточки товаров\VansPageWindow.g.cs
+C:\Users\Frozin\Desktop\Study\Univer\OOP\Git\WPF_App_BrandShoes\MyStore\obj\Release\Карточки товаров\VansPageWindow.baml
+C:\Users\Frozin\Desktop\Study\Univer\OOP\Git\WPF_App_BrandShoes\MyStore\obj\Release\Карточки товаров\DunkPageWindow.g.cs
+C:\Users\Frozin\Desktop\Study\Univer\OOP\Git\WPF_App_BrandShoes\MyStore\obj\Release\Карточки товаров\DunkPageWindow.baml
+C:\Users\Frozin\Desktop\Study\Univer\OOP\Git\WPF_App_BrandShoes\MyStore\obj\Release\Карточки товаров\SambaPageWindow.g.cs
+C:\Users\Frozin\Desktop\Study\Univer\OOP\Git\WPF_App_BrandShoes\MyStore\obj\Release\Карточки товаров\SambaPageWindow.baml
+C:\Users\Frozin\Desktop\Study\Univer\OOP\Git\WPF_App_BrandShoes\MyStore\obj\Release\Карточки товаров\RSZPageWindow.g.cs
+C:\Users\Frozin\Desktop\Study\Univer\OOP\Git\WPF_App_BrandShoes\MyStore\obj\Release\Карточки товаров\RSZPageWindow.baml
+C:\Users\Frozin\Desktop\Study\Univer\OOP\Git\WPF_App_BrandShoes\MyStore\obj\Release\Карточки товаров\OcaiPageWindow.g.cs
+C:\Users\Frozin\Desktop\Study\Univer\OOP\Git\WPF_App_BrandShoes\MyStore\obj\Release\Карточки товаров\OcaiPageWindow.baml
