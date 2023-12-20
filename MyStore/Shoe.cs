@@ -8,14 +8,15 @@ namespace MyStore
 {
     internal class Shoe
     {
+
         public int id { get; set; }
         private int price;
         private string brand, model;
 
-        public int Price 
-        { 
-            get { return price; } 
-            set { price = value; } 
+        public int Price
+        {
+            get { return price; }
+            set { price = value; }
         }
 
         public string Brand
@@ -32,7 +33,7 @@ namespace MyStore
 
         public Shoe() { }
 
-        public Shoe(int price, string brand, string model, string description)
+        public Shoe(int price, string brand, string model)
         {
             this.price = price;
             this.brand = brand;

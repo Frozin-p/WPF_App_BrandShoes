@@ -21,6 +21,7 @@ namespace MyStore
     /// Interaction logic for HomePageWindow.xaml
     /// </summary>
     /// 
+
     public partial class HomePageWindow : Window
     {
 
@@ -34,7 +35,7 @@ namespace MyStore
 
             List<Shoe> shoes = datb.Shoes.ToList();
             List<string> tb = new List<string>();
-            foreach(Shoe shoe in shoes)
+            foreach (Shoe shoe in shoes)
             {
                 tb.Add($"{shoe.Brand} {shoe.Model} - {shoe.Price} руб.");
             }
@@ -43,6 +44,29 @@ namespace MyStore
             textBox_3.Text = tb[2];
             textBox_4.Text = tb[3];
             textBox_5.Text = tb[4];
+        }
+
+        private void CheckNullTb(object sender, RoutedEventArgs e)
+        {
+            string tB_1 = textBox_1.Text ?? "Ошибка";
+            if (tB_1 == "Ошибка")
+                textBox_1.Text = "Ошибка";
+
+            string tB_2 = textBox_2.Text ?? "Ошибка";
+            if (tB_2 == "Ошибка")
+                textBox_2.Text = "Ошибка";
+
+            string tB_3 = textBox_3.Text ?? "Ошибка";
+            if (tB_3 == "Ошибка")
+                textBox_3.Text = "Ошибка";
+
+            string tB_4 = textBox_4.Text ?? "Ошибка";
+            if (tB_4 == "Ошибка")
+                textBox_4.Text = "Ошибка";
+
+            string tB_5 = textBox_5.Text ?? "Ошибка";
+            if (tB_5 == "Ошибка")
+                textBox_5.Text = "Ошибка";
         }
 
         private void UserPage_Button(object sender, RoutedEventArgs e)
